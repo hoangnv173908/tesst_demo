@@ -1,0 +1,27 @@
+body{
+    width:1000px;
+    margin:0 auto;
+    font-family: Arial,sans-serif;
+    font-size: 16px;
+  }
+  
+  #element0{
+    width:1000px;
+    height: 40px;
+    background-color : #555;
+  }
+  #element10{
+    width:400px;
+    height:100px;
+    background-color : #FFFF00 ;
+    float: left;
+  }
+  #element11{
+    width:600px;
+    height:100px;
+    background-color : #777;
+    float: left;
+  }
+
+ 
+  

@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      function getRandomInt(min, max) {
+         return Math.random() * (max - min) + min;
+        }
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Time', 'PM2.5'],
+          ['2004',  getRandomInt(500,1000)],
+          ['2004',  getRandomInt(500,1000)],
+          ['2004',  getRandomInt(500,1000)],
+          ['2004',  getRandomInt(500,1000)],
+          ['2004',  getRandomInt(500,1000)],
+          ['2004',  getRandomInt(500,1000)],
+          ['2004',  getRandomInt(500,1000)],
+          ['2004',  getRandomInt(500,1000)],
+          ['2004',  getRandomInt(500,1000)],
+          ['2004',  getRandomInt(500,1000)],
+          ['2004',  getRandomInt(500,1000)],
+          ['2004',  getRandomInt(500,1000)],
+          ['2004',  getRandomInt(500,1000)],
+          ['2004',  getRandomInt(500,1000)],
+          ['2004',  getRandomInt(500,1000)],
+          ['2004',  getRandomInt(500,1000)],
+          ['2004',  getRandomInt(500,1000)],
+          ['2004',  getRandomInt(900,1000)],
+          ['2004',  getRandomInt(900,1000)],
+          ['2004',  getRandomInt(900,1000)],
+          ['2004',  getRandomInt(900,1000)],
+          ['2004',  getRandomInt(900,1000)],
+          ['2004',  getRandomInt(900,1000)],
+          ['2004',  getRandomInt(900,1000)],
+          ['2004',  getRandomInt(900,1000)],
+          ['2004',  getRandomInt(900,1000)],
+          ['2004',  getRandomInt(900,1000)],
+          ['2004',  getRandomInt(900,1000)],
+          ['2004',  getRandomInt(900,1000)],
+          ['2004',  getRandomInt(900,1000)],
+          ['2004',  getRandomInt(900,1000)],
+          ['2004',  getRandomInt(900,1000)],
+        ]);
+
+        var options = {
+          //curveType: 'function',
+          legend: { position: 'top' }
+        };
+
+        var chart  = new google.visualization.LineChart(document.getElementById('curve_chart'));
+        var chart1 = new google.visualization.LineChart(document.getElementById('curve_chart1'));
+        chart.draw(data, options);
+        chart1.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+      <div id="element0">
+        <p> <span style="color:blue;"><b>Hanoi AQI:</b></span>Hanoi Real-Time Air Quality Index(AQI) </p>
+      </div>
+
+
+      <div  id='element10'>
+        <p style='margin-top:15px;font-size: 50px;text-align:center;'><b>84<b></p> 
+      </div>
+  
+      <div  id='element11'>          
+        <p style='margin-left:15px;'> 
+          <span style="font-size:30px;color:#FFFF00 ">Moderate12 </span><br>
+          Update on Thursday 15:00<br>
+          Temp : <b>21</b> degree
+        </p>
+      </div>
+
+      <div id="curve_chart" style="width: 49%; height: 200px ;float: left;border: 1px solid #ccc"></div>
+      
+      <div id="curve_chart1" style="width: 50%; height: 200px;float:right;border: 1px solid #ccc"></div>
+
+    
+
+</body>
+</html>
